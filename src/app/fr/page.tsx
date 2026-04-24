@@ -3,8 +3,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import ScrollUp from "@/components/Common/ScrollUp";
-
 // FR — composants définitifs
 import HeroFR from "@/components/fr/Hero";
 import ProblemSolutionFR from "@/components/fr/ProblemSolution";
@@ -111,8 +109,6 @@ export default function HomeFR() {
 
   return (
     <>
-      <ScrollUp />
-
       <main id="main-content" role="main">
         <script
           type="application/ld+json"
@@ -133,31 +129,15 @@ export default function HomeFR() {
           }}
         />
 
-        {/* 1) Hero */}
         <HeroFR />
-
-        {/* 2) Problème / besoin réel */}
         <ProblemSolutionFR />
-
-        {/* 3) Différenciation / pourquoi cette réponse */}
         <DifferentiationFR />
-
-        {/* 4) Produit / éléments livrés */}
         <FeaturesFR />
-
-        {/* 5) Comment ça marche */}
         <HowItWorksFR />
-
-        {/* 6) Cas d’usage terrain */}
         <TestimonialsFR />
-
-        {/* 7) Pricing */}
         <PricingFR />
-
-        {/* 8) FAQ */}
         <FAQFR />
 
-        {/* 9) CTA final */}
         <section
           id="final-cta"
           data-section="final-cta"
